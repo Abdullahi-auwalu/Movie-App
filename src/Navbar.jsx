@@ -4,7 +4,7 @@ import Menu from "./assets/Menu.png"
 
 const Navbar = () => {
   return (
-    <div className="absolute -top-0 flex justify-between text-white w-screen mt-5">
+    <div className="absolute -top-0 flex justify-between text-white w-full mt-5">
         <div className="flex ml-5 justify-center align-middle md:ml-10 lg:ml-20">
             <img className="h-9 " src={Logo} alt="logo" />
             <h3 className="ml-5 text-xl">MovieBox</h3>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        <div className="flex mr-5 lg:mr-20">
+        <div className="flex mr-5 lg:mr-20 md:ml-10">
             <p className="mr-3">sign in</p>
             <img className="h-7" src={Menu} alt="" />
         </div>
