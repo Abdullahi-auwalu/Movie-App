@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.container{
+    
+    
+}
+
 .circle{
     width: 350px;
     border: 1px solid white;
@@ -16,3 +21,4 @@
 
     }
 }
+
