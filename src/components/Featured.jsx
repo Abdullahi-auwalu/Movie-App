@@ -1,5 +1,5 @@
 import Card from "./Card"
-import Arrow from "./assets/Arrow.png"
+import Arrow from "../assets/Arrow.png"
 
 
 

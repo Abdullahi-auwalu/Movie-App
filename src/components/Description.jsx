@@ -1,6 +1,6 @@
-import IMDB from "./assets/IMDB.png"
-import Apple from "./assets/apple.png"
-import play from "./assets/play.png"
+import IMDB from "../assets/IMDB.png"
+import Apple from "../assets/apple.png"
+import play from "../assets/play.png"
 
 const Description = () => {
   return (
@@ -18,7 +18,7 @@ const Description = () => {
                 </div>
             </div>
             <p className="w-50 text-sm ">
-            John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
+            John Wick is on the run after killing a member of the international assassins guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
             </p>
             <div className="mt-4 w-48">                
             <a className="flex h-12 align-middle rounded-lg shadow-lg tracking-wider font-semibold text-sm bg-red-700 px-4 py-3" href="">

@@ -1,6 +1,6 @@
-import Logo from "./assets/tv.png"
-import SearchIcon from "./assets/Icon.png"
-import Menu from "./assets/Menu.png"
+import Logo from "../assets/tv.png"
+import SearchIcon from "../assets/Icon.png"
+import Menu from "../assets/Menu.png"
 
 const Navbar = () => {
   return (

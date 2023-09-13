@@ -1,13 +1,16 @@
-import Apple from "./assets/apple.png"
-import IMDB from "./assets/IMDB.png"
-import Poster from "./assets/Poster.png"
+import Apple from "../assets/apple.png"
+import IMDB from "../assets/IMDB.png"
+import Poster from "../assets/Poster.png"
+import Favorite from "../assets/Favorite.png"
+
 
 const Card = () => {
   return (
     <div className="ml-5 md:ml-10 lg:ml-20 mr-5 md:mr-10 lg:mr-20 flex flex-wrap justify-center  mt-16 h-screen">
         <div className="w-80 px-4 py-3 mb-7 h-full sm:w-64 sm:mr-10">
-            <div className="h-96">
-                <img className="inset-0 w-screen h-full object-cover object-center" src={Poster} alt="poster" />
+            <div className="h-96 relative">
+                <img className="z-40 mt-5 absolute right-4" src={Favorite} alt="" />
+                <img className="z-0 mt-0 inset-0 w-screen h-full object-cover object-center" src={Poster} alt="poster" />
             </div>
             <p className="my-4 text-gray-400">USA 2018</p>
             <h3 className="text-2xl font-semibold">Batman Begins</h3>

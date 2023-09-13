@@ -1,6 +1,6 @@
 import Description from './Description'
 import Navbar from './Navbar'
-import Poster from './assets/Poster.png'
+import Poster from '../assets/Poster.png'
 
 const Header = () => {
   return (
