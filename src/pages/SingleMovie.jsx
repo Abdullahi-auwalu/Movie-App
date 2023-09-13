@@ -40,7 +40,7 @@ const SingleMovie = () => {
 
   return (
     <div className="bg-gray-50 ">
-      <div className="flex">
+      <div className="flex w-full">
         <Sidebar /> 
         <Details movie={movie} />
       </div>

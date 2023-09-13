@@ -13,8 +13,8 @@ const Details = ({ movie }) => {
   return (
     <div>
       <div className="container bg-gray-50 mt-8 px-7">
-        <div>
-          <img
+        <div className="w-full min-h-full">
+          <img data-testid:movie-poster className="w-full h-96 inset-0 rounded-lg"
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
             alt={movie.title}
           />
@@ -22,13 +22,12 @@ const Details = ({ movie }) => {
         <div>
           <div className="flex justify-between mt-4 bg-gray-50">
             <div className="flex text-xs text-gray-500 font-bold sm:text-base sm:ml-2">
-              <p className="mr-1">{movie.title}</p>
-              <p className="mr-1 -mt-2 font-extrabold text-base">.</p>
-              <p className="mr-1">{movie.release_date}</p>
-              <p className="mr-1 -mt-2 font-extrabold text-base">.</p>
-              <p className="mr-1">{movie.rating}</p>
-              <p className="mr-1 -mt-2 font-extrabold text-base">.</p>
-              <p className="mr-1">{movie.runtime}m</p>
+              <p data-testid:movie-title className="mr-1">{movie.title}</p>
+              <p className="mr-1 -mt-2 sm:-mt-1 font-extrabold text-base">.</p>
+              <p data-testid:movie-release-date className="mr-1">{movie.release_date}</p>
+              
+              <p className="mr-1 sm:-mt-1 -mt-2 font-extrabold text-base">.</p>
+              <p data-testid:movie-runtime className="mr-1">{movie.runtime}m</p>
               {movie.genres && movie.genres.map((genre) => (
                 <p className="mr-1 text-red-700 sm:ml-7" key={genre.id}>{genre.name}</p>
               ))}
@@ -66,11 +65,7 @@ const Details = ({ movie }) => {
           <div className="my-7 md:flex">
             <div className="text-gray-500 md:w-3/5 font-medium w-full px-5">
               {/* Other content */}
-            </div>
-            <div className="mt-5 md:mt-0">
-              {/* Other content */}
-              <div className="text-gray-500 md:w-3/5 font-medium   w-full px-5">
-                        <p className="mb-5">Director <span className="text-red-400">: Joseph Kosinski</span></p>
+              <p className="mb-5">Director <span className="text-red-400">: Joseph Kosinski</span></p>
                         <p className="mb-5">Writers <span className="text-red-400">: Jim Cash, Jack EPPs Jr, Peter Craig</span></p>
                         <p className="mb-0">Stars <span className="text-red-400">: Tom Cruise, Jennifer Conneily, Miles Teller</span></p>
                         <div className="flex mt-5 md:mt-16">                            
@@ -79,7 +74,12 @@ const Details = ({ movie }) => {
                             <p>See Showtimes</p>
                         </a>
                         <p className="ml-4 mt-5">5 Award 9 nominations </p>
-                        </div>
+            </div>
+</div>
+            <div className="mt-5 md:mt-0">
+              {/* Other content */}
+              <div className="text-gray-500 md:w-3/5 font-medium   w-full px-5">
+                        
                     </div>
                     <div className="mt-5 md:mt-0 ">
                         <img className="h-56 w-full md:w-92 flex-1" src={Image} alt="" />
