@@ -1,4 +1,4 @@
-import Card from "./Card"
+import Card from "./MovieCard"
 import Arrow from "../assets/Arrow.png"
 
 

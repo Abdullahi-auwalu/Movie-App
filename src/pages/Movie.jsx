@@ -1,11 +1,12 @@
+import Details from "../components/Movie"
 import Sidebar from "../components/Sidebar"
 
 
 const Movie = () => {
   return (
-    <div>
+    <div className="flex">
         <Sidebar />
-        Details
+        <Details />
     </div>
   )
 }
