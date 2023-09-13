@@ -21,7 +21,7 @@ const Description = () => {
             John Wick is on the run after killing a member of the international assassins guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
             </p>
             <div className="mt-4 w-48">                
-            <a className="flex h-12 align-middle rounded-lg shadow-lg tracking-wider font-semibold text-sm bg-red-700 px-4 py-3" href="">
+            <a className="flex focus:bg-red-300 h-12 align-middle rounded-lg shadow-lg tracking-wider font-semibold text-sm bg-red-700 px-4 py-3" href="">
                 <img className="h-5  mr-2" src={play} alt="" />
                 <p>WATCH TRAILER</p>
             </a>
