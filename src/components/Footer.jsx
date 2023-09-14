@@ -6,7 +6,7 @@ import Instagram from "../assets/Instagram.png"
 
 const Footer = () => {
   return (
-    <div className="flex align-middle justify-center bg-red-50 h-96 ">
+    <div className="flex align-middle justify-center bg-gray-50 h-96 ">
         <div className="flex-col my-20">            
             <div className="flex align-middle justify-center ml-20 w-96">
                 <img className="h-5 mr-10" src={Facebook} alt="" />

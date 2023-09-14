@@ -23,11 +23,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-full w-full bg-white">
+    <div className="min-h-full w-full bg-gray-50">
       <Header />
       <Featured />
-      <div className="container mx-auto my-10">
-        <h2 className="text-2xl font-semibold mb-4">Top 10 Movies</h2>
+      <div className="container mx-auto my-10 bg-gray-50">        
         {isLoading ? (
           <div>Loading...</div>
         ) : error ? (

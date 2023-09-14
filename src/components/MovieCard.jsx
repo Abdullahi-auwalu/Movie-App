@@ -7,7 +7,7 @@ import IMDB from "../assets/IMDB.png";
 
 function MovieCard({ movie }) {
     return (
-      <div data-testid:movie-card className="flex sm:justify-start justify-center bg-white">
+      <div data-testid:movie-card className="flex sm:justify-start justify-center bg-gray-50">
         <Link to={`/movies/${movie.id}`}> 
           <div className="w-80 px-4 py-3 mb-7 h-full sm:w-64 sm:mr-10">            
             <div className="h-96 relative">
