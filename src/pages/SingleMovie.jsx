@@ -10,10 +10,10 @@ const SingleMovie = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
+
 
   useEffect(() => {
-    
-
     const fetchMovieDetails = async () => {
       try {
         const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=d5309e445289b2c49d18d1c3c6bbc260`);

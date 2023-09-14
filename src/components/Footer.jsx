@@ -26,7 +26,7 @@ const Footer = () => {
                 </p>
             </div>
             <p className="mt-10 ml-24 text-lg font-light text-gray-500">
-                &:copy 2023 MovieBox by Abdullahi
+                &copy; 2023 MovieBox by Abdullahi
             </p>
         </div>
     </div>
