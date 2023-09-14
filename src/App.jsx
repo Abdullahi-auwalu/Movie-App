@@ -8,11 +8,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
+  // const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
   
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
+    fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=d5309e445289b2c49d18d1c3c6bbc260`)
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.results.slice(0, 12));
