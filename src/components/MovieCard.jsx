@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Favorite from "../assets/Favorite.png";
-import Apple from "../assets/Apple.png";
+import Apple from "../assets/apple.png";
 import IMDB from "../assets/IMDB.png";
 
 

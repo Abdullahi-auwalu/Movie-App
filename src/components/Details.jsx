@@ -1,4 +1,3 @@
-import Banner from "../assets/Banner.png"
 import Star from "../assets/Star.png"
 import Tickets from "../assets/Tickets.png"
 import List from "../assets/List.png"
@@ -70,8 +69,7 @@ const Details = ({ movie }) => {
                         <p className="mb-0">Stars <span className="text-red-400">: Tom Cruise, Jennifer Conneily, Miles Teller</span></p>
                         <div className="flex mt-5 md:mt-16">                            
                         <a className="focus:bg-red-300 flex h-12 align-middle rounded-lg shadow-lg tracking-wider font-semibold text-white text-sm bg-red-700 px-2 py-3 " href="">
-                            <img className="h-5  mr-2" src={Tickets} alt="" />
-                            <p>See Showtimes</p>
+                            <p className="w-auto">Top rated movie #65</p>
                         </a>
                         <p className="ml-4 mt-5">5 Award 9 nominations </p>
             </div>
