@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
-import Details from '../components/Details';
+import MovieDetails from '../components/MovieDetails';
 import Footer from '../components/Footer';
 import { Spinner, Stack, Text } from "@chakra-ui/react";
 
@@ -57,7 +57,7 @@ const SingleMovie = () => {
     <div className="bg-gray-50">
       <div className="flex w-full">
         <Sidebar />
-        <Details movie={movie} />
+        <MovieDetails movie={movie} />
       </div>
       <Footer />
     </div>
