@@ -14,7 +14,7 @@ const Footer = () => {
                 <img className="h-5 mr-10" src={Twitter} alt="" />
                 <img className="h-5 mr-10" src={Youtube} alt="" />
             </div>
-            <div className="flex  pt-10 justify-around ml-6  text-base font-semibold ">
+            <div className="sm:flex  pt-10 sm:justify-around ml-40 sm:ml-6  text-base font-semibold ">
                 <p>
                     Condition of Use
                 </p>
