@@ -13,8 +13,8 @@ const Details = ({ movie }) => {
     <div>
       <div className="container bg-gray-50 mt-8 px-7">
         <div className="w-full min-h-full">
-          <img data-testid:movie-poster className="w-full h-96 inset-0 rounded-lg"
-            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+          <img data-testid:movie-poster className="w-screen h-96 inset-0 rounded-lg"
+            src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
             alt={movie.title}
           />
         </div>

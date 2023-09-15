@@ -33,11 +33,11 @@ const SingleMovie = () => {
   }, [movieId]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className='flex align-middle justify-center text-violet-500 text-lg mt-10 font-bold'>Loading...</div>;
   }
 
   if (error || !movie) {
-    return <div>Movie not found.</div>;
+    return <div className='flex align-middle justify-center text-red-500 text-lg mt-10 font-bold'>Movie not found.</div>;
   }
 
   return (

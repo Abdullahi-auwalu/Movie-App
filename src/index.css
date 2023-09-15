@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color:  rgb(107 114 128 / var(--tw-text-opacity)) 
-}
-
 .circle{
     width: 350px;
     border: 1px solid white;
@@ -15,8 +11,9 @@ body{
 
 @media (max-width:640px) {
     .circle{
-        width: 150px;
+        width: 100px;
         margin-right: -10px;
+        padding: 0;
 
     }
 }
