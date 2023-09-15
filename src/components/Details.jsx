@@ -74,12 +74,12 @@ const Details = ({ movie }) => {
                         <p className="ml-4 mt-5">5 Award 9 nominations </p>
             </div>
 </div>
-            <div className="mt-5 md:mt-0">
+            <div className="mt-5 md:mt-0 ">
               {/* Other content */}
               <div className="text-gray-500 md:w-3/5 font-medium   w-full px-5">
                         
                     </div>
-                    <div className="mt-5 md:mt-0 ">
+                    <div className="mt-5 md:mt-0 md:w-92 ">
                         <img className="h-56 w-full md:w-92 flex-1" src={Image} alt="" />
                     </div>
                 
