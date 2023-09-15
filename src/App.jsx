@@ -19,6 +19,7 @@ function App() {
       .then((data) => {
         setMovies(data.results.slice(0, 10));
         setIsLoading(false);
+        console.log('Movie results:', data.results);
       })
       .catch((err) => {
         setError(err);
@@ -28,7 +29,7 @@ function App() {
 
   if (isLoading) {
     return( 
-      <div className='flex align-middle justify-center text-lg mt-10 font-bold'>            
+      <div className='flex h-10  align-middle justify-center text-lg mt-10 font-bold'>            
           <Stack direction='row' spacing={4}>
             <Spinner size="xl" color="blue.500" />
           </Stack>
