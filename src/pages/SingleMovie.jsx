@@ -35,9 +35,11 @@ const SingleMovie = () => {
 
   if (isLoading) {
     return ( 
-      <Stack direction='row' spacing={4}>
-        <Spinner size="xl" color="blue.500" />
-      </Stack>
+      <div className='flex align-middle justify-center text-lg mt-10 font-bold'>            
+          <Stack direction='row' spacing={4}>
+            <Spinner size="xl" color="blue.500" />
+          </Stack>
+      </div>
   );
   }
 

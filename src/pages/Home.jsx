@@ -31,11 +31,13 @@ const Home = () => {
       <Featured />
       <div className="container mx-auto my-10 bg-gray-50">        
         {isLoading ? (
-          <Stack direction='row' spacing={4}>
-            <Spinner size="xl" color="blue.500" />
-          </Stack>
+          <div className='flex align-middle justify-center text-lg mt-10 font-bold'>            
+            <Stack direction='row' spacing={4}>
+              <Spinner size="xl" color="blue.500" />
+            </Stack>
+          </div>
         ) : error ? (
-          <div>Error: {error.message}</div>
+          <div className='flex align-middle justify-center text-red-500 text-lg mt-10 font-bold'>Movie not found.</div>
         ) : (
           <MovieList movies={movies} />
         )}

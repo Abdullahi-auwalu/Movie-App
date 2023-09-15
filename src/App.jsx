@@ -28,12 +28,14 @@ function App() {
 
   if (isLoading) {
     return( 
-      <Stack direction='row' spacing={4}>
-        <Spinner size="xl" color="blue.500" />
-      </Stack>
+      <div className='flex align-middle justify-center text-lg mt-10 font-bold'>            
+          <Stack direction='row' spacing={4}>
+            <Spinner size="xl" color="blue.500" />
+          </Stack>
+      </div>
   )}
   if (error) {
-    return <div className='flex align-middle justify-center text-red-500 text-lg mt-10 font-bold'>Error: {error.message}</div>;
+    return <div className='flex align-middle justify-center text-red-500 text-lg mt-10 font-bold'>Movie not found.</div>;
   }
 
   return (
