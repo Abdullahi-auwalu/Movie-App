@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Details from '../components/Details';
 import Footer from '../components/Footer';
-import { Spinner, Stack, Box, Text } from "@chakra-ui/react";
+import { Spinner, Stack, Text } from "@chakra-ui/react";
 
 const SingleMovie = () => {
   const { id: movieId } = useParams();

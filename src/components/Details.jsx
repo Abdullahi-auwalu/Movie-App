@@ -13,7 +13,7 @@ const Details = ({ movie }) => {
     <div>
       <div className="container bg-gray-50 mt-8 px-7">
         <div className="w-full min-h-full">
-          <img data-testid:movie-poster className="w-screen h-96 inset-0 rounded-lg"
+          <img data-testid='movie-poster' className="w-screen h-96 inset-0 rounded-lg"
             src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`}
             alt={movie.title}
           />
@@ -21,12 +21,12 @@ const Details = ({ movie }) => {
         <div>
           <div className="flex justify-between mt-4 bg-gray-50">
             <div className="flex text-xs text-gray-500 font-bold sm:text-base sm:ml-2">
-              <p data-testid:movie-title className="mr-1">{movie.title}</p>
+              <p data-testid='movie-title' className="mr-1">{movie.title}</p>
               <p className="mr-1 -mt-2 sm:-mt-1 font-extrabold text-base">.</p>
-              <p data-testid:movie-release-date className="mr-1">{movie.release_date}</p>
+              <p data-testid='movie-release-date' className="mr-1">{movie.release_date}</p>
               
               <p className="mr-1 sm:-mt-1 -mt-2 font-extrabold text-base">.</p>
-              <p data-testid:movie-runtime className="mr-1">{movie.runtime}m</p>
+              <p data-testid='movie-runtime' className="mr-1">{movie.runtime}m</p>
               {movie.genres && movie.genres.map((genre) => (
                 <p className="mr-1 text-red-700 sm:ml-7" key={genre.id}>{genre.name}</p>
               ))}
@@ -42,7 +42,7 @@ const Details = ({ movie }) => {
           </div>
           <div className="mt-5 md:flex w-full">
             <div className="text-gray-500 font-medium sm:flex w-full sm:flex-2 md:w-3/5 px-3">
-              <p>{movie.overview}</p>
+              <p data-testid='movie-overview'>{movie.overview}</p>
             </div>
             <div className="block w-full md:w-92 flex-1 my-7 md:my-0 mr-2">
               <a
