@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Details from '../components/Details';
 import Footer from '../components/Footer';
+import { Spinner, Stack } from "@chakra-ui/react";
 
 const SingleMovie = () => {
   const { id: movieId } = useParams();
@@ -33,7 +34,11 @@ const SingleMovie = () => {
   }, [movieId]);
 
   if (isLoading) {
-    return <div className='flex align-middle justify-center text-violet-500 text-lg mt-10 font-bold'>Loading...</div>;
+    return ( 
+      <Stack direction='row' spacing={4}>
+        <Spinner size="xl" color="blue.500" />
+      </Stack>
+  );
   }
 
   if (error || !movie) {

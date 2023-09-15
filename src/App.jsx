@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SingleMovie from './pages/SingleMovie';
+import { Spinner,Stack } from "@chakra-ui/react";
+
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -25,9 +27,11 @@ function App() {
   }, []);
 
   if (isLoading) {
-    return <div className='flex align-middle justify-center text-violet-500 text-lg mt-10 font-bold'>Loading...</div>;
-  }
-
+    return( 
+      <Stack direction='row' spacing={4}>
+        <Spinner size="xl" color="blue.500" />
+      </Stack>
+  )}
   if (error) {
     return <div className='flex align-middle justify-center text-red-500 text-lg mt-10 font-bold'>Error: {error.message}</div>;
   }

@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <div className="flex align-middle justify-center bg-gray-50 h-96 ">
         <div className="flex-col my-20">            
-            <div className="flex align-middle justify-center ml-20 w-96">
+            <div className="flex align-middle justify-center ml-12 w-96">
                 <img className="h-5 mr-10" src={Facebook} alt="" />
                 <img className="h-5 mr-10" src={Instagram} alt="" />
                 <img className="h-5 mr-10" src={Twitter} alt="" />
                 <img className="h-5 mr-10" src={Youtube} alt="" />
             </div>
-            <div className="flex pt-10 justify-between ml-10 text-base font-semibold ">
+            <div className="flex  pt-10 justify-between ml-6  text-base font-semibold ">
                 <p>
                     Condition of Use
                 </p>

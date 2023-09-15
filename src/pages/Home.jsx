@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Featured from '../components/Featured';
 import Footer from '../components/Footer';
 import MovieList from '../components/MovieList';
+import { Spinner, Stack } from "@chakra-ui/react";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -30,7 +31,9 @@ const Home = () => {
       <Featured />
       <div className="container mx-auto my-10 bg-gray-50">        
         {isLoading ? (
-          <div>Loading...</div>
+          <Stack direction='row' spacing={4}>
+            <Spinner size="xl" color="blue.500" />
+          </Stack>
         ) : error ? (
           <div>Error: {error.message}</div>
         ) : (

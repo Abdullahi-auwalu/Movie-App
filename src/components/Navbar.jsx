@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div>
             <div className="">
-                <div className="flex justify-end lg:justify-center align-middle mr-10 "> 
+                <div className="hidden sm:flex justify-end lg:justify-center align-middle mr-10 "> 
                                           
                         <input type="text" className="bg-transparent lg:w-96 p-3 h-8 placeholder-gray-500 lg:placeholder-white placeholder-opacity-0 lg:placeholder-opacity-50 focus:outline-none circle" placeholder="what do you want to watch"/>
                               
